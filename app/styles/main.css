@@ -1,8 +1,10 @@
-header{background-color: #9fc7c2;height:50px;width:100%;overflow: hidden;}
+header{background-color: #9fc7c2;height:50px;width:100%;overflow: hidden;position: fixed;z-index: 1}
 .headerLogo{height: 40px;width: 40px;border-radius: 40px;margin-left: 60px;margin-top:5px;float: left;}
 .introName{float:left;display: block;margin-left: 40px;margin-top: 15px;font-family:"微软雅黑";font-size: 16px;color: white;}
 .headerRight{float:right;margin-right: 200px;height: 100%;}
-.headerButton{width:60px;height:100%;display: block;float: left;text-align: center;color: white;padding:15px 20px;}
-.headerButton:hover{background-color: #80B3ad;}
-.mark{background-color: #609F98;}
-.page{background: url(../images/background.png);height: 600px;width: 100%;padding-top:50px;}
+#myMenu{list-style: none;width: 100%;}
+.menuList{width:70px;height:100%;display: block;float: left;text-align: center;}
+.navBtn{width: 100%;height:50px;display: block;color: white;font-size: 14px;font-weight: 400;line-height: 50px;}
+.navBtn:hover{background-color: #80B3ad;}
+.active{background-color: #609F98;}
+.section{background: url(../images/background.png);height: 600px;width: 100%;padding-top:50px;}

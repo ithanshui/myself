@@ -29,24 +29,27 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header>
+    <header id="header">
       <div class="headerLeft">
         <img src="images/logo.png" class="headerLogo" alt="logo">
         <p class="introName">森仔的前端小屋</p>
       </div>
       <nav class="headerRight">
-        <a class="headerButton mark" href="#homepage">首页</a>
-        <a class="headerButton" href="">教育</a>
-        <a class="headerButton" href="">技能</a>
-        <a class="headerButton" href="">作品</a>
-        <a class="headerButton" href="">联系方式</a>
+      <ul id="myMenu">
+    <li data-menuanchor="firstPage" class="menuList active"><a class="navBtn mark" href="#firstPage">首页</a></li>
+    <li data-menuanchor="secondPage"class="menuList"><a class="navBtn" href="#secondPage">教育</a></li>
+    <li data-menuanchor="thirdPage" class="menuList"><a class="navBtn" href="#thirdPage">技能</a></li>
+    <li data-menuanchor="fourthPage"class="menuList"><a class="navBtn" href="#fourthPage">作品</a></li>
+    <li data-menuanchor="fifthPage"class="menuList"><a class="navBtn" href="#fifthPage">联系方式</a></li>
+</ul>
       </nav>
     </header>
     <div id="fullpage">
-    <div class="section">1</div>
-    <div class="section">2</div>
+    <div class="section" id="page1">1</div>
+    <div class="section" id="page1">2</div>
     <div class="section">3</div>
     <div class="section">4</div>
+    <div class="section">5</div>
 </div>
     
     
@@ -60,7 +63,7 @@
     
     <script>
     $(document).ready(function() {
-    $('#fullpage').fullpage();
+    $('#fullpage').fullpage({paddingTop: '50px', anchors:['firstPage', 'secondPage', 'thirdPage','fourthPage','fifthPage'],menu: '#myMenu'});
 });</script>
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
