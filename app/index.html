@@ -17,6 +17,7 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/jquery.fullPage.css">
     <link href='http://api.youziku.com/webfont/CSS/56e7cbb8f629d80a305b35bd' rel='stylesheet' type='text/css' />
     <!-- endbuild -->
     
@@ -41,16 +42,26 @@
         <a class="headerButton" href="">联系方式</a>
       </nav>
     </header>
-    <div class="page" id="homepage"></div>
+    <div id="fullpage">
+    <div class="section">1</div>
+    <div class="section">2</div>
+    <div class="section">3</div>
+    <div class="section">4</div>
+</div>
     
     
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="scripts/jquery.fullPage.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
+    <script>
+    $(document).ready(function() {
+    $('#fullpage').fullpage();
+});</script>
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
