@@ -1,10 +1,27 @@
+body{color:white;}
+/*导航栏*/
 header{background-color: #9fc7c2;height:50px;width:100%;overflow: hidden;position: fixed;z-index: 1}
 .headerLogo{height: 40px;width: 40px;border-radius: 40px;margin-left: 60px;margin-top:5px;float: left;}
-.introName{float:left;display: block;margin-left: 40px;margin-top: 15px;font-family:"微软雅黑";font-size: 16px;color: white;}
+.introName{float:left;display: block;margin-left: 40px;margin-top: 15px;font-family:"微软雅黑";font-size: 18px;letter-spacing: 10px;}
 .headerRight{float:right;margin-right: 200px;height: 100%;}
+/*导航按钮*/
 #myMenu{list-style: none;width: 100%;}
 .menuList{width:70px;height:100%;display: block;float: left;text-align: center;}
-.navBtn{width: 100%;height:50px;display: block;color: white;font-size: 14px;font-weight: 400;line-height: 50px;}
+.navBtn{width: 100%;height:50px;display: block;font-size: 14px;font-weight: 400;line-height: 50px;color: white;}
 .navBtn:hover{background-color: #80B3ad;}
 .active{background-color: #609F98;}
 .section{background: url(../images/background.png);height: 600px;width: 100%;padding-top:50px;}
+/*首页*/
+/*左侧自我介绍*/
+.intro{width: 50%;overflow:hidden;display: flex;flex-direction: column;align-items:center;float:left;}
+.avatar{height: 150px;width: 150px;display: block;border-radius: 75px;}
+.name{margin-top: 30px;font-size: 25px;}
+.introContext{margin-top:25px;font-size: 20px;}
+/*右侧教育背景*/
+.education{width:50%;display: flex;flex-direction: column;align-items:center;float:right;}
+.eduContext{margin-top: 20px;}
+.emn{margin-top: 20px;display: block;}
+/*作品页*/
+.portfolio{height: 100%;width: 30%;border: solid 3px #AE9FC6;border-radius: 3px;float:left;margin-left: 10px;padding:0 10px;}
+.jswork{border: solid 3px #C6C29F;}
+.mixwork{border:solid 3px #94575E;}
