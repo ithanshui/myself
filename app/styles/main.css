@@ -23,5 +23,5 @@ header{background-color: #9fc7c2;height:50px;width:100%;overflow: hidden;positio
 .emn{margin-top: 20px;display: block;}
 /*作品页*/
 .portfolio{height: 100%;width: 30%;border: solid 3px #AE9FC6;border-radius: 3px;float:left;margin-left: 10px;padding:0 10px;}
-.jswork{border: solid 3px #C6C29F;}
+.jswork{border:solid 3px #C6C29F;}
 .mixwork{border:solid 3px #94575E;}
