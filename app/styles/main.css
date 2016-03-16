@@ -18,10 +18,15 @@ header{background-color: #9fc7c2;height:50px;width:100%;overflow: hidden;positio
 .name{margin-top: 30px;font-size: 25px;}
 .introContext{margin-top:25px;font-size: 20px;}
 /*右侧教育背景*/
-.education{width:50%;display: flex;flex-direction: column;align-items:center;float:right;}
+.education{width:50%;float:left;height: 50%;}
+.oneSchool{float: left;width:250px;height: 200px;display: flex;flex-direction: column;align-items:center;}
 .eduContext{margin-top: 20px;}
-.emn{margin-top: 20px;display: block;}
+.logo{margin-top: 20px;display: block;width:100px;height: 100px;}
+.explain{clear:both;margin-top: 10px;margin-top: 20px;margin-left: 20px;}
+.miniSpeech{line-height: 30px;letter-spacing: 5px;}
 /*作品页*/
-.portfolio{height: 100%;width: 30%;border: solid 3px #AE9FC6;border-radius: 3px;float:left;margin-left: 10px;padding:0 10px;}
+.portfolio{border: solid 3px #AE9FC6;border-radius: 3px;float:left;display: flex;flex-flow: row wrap;width: 100%;height: 100%;margin-top: 10px;justify-content: space-around;}
+.porBox{float:left;width:30%;height: 85%;margin-left: 20px;margin-top: -50px;text-align: center;}
 .jswork{border:solid 3px #C6C29F;}
 .mixwork{border:solid 3px #94575E;}
+.programLink{width:150px;height: 50px;color: white;line-height: 50px;border:3px solid #78B0A9;border-radius: 15px;margin-top:5px;}
